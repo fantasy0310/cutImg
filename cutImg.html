@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.Jcrop.js"></script>
+	<link rel="stylesheet" href="css/jquery.Jcrop.css" type="text/css" />
+
+	<style>
+		.srcBox{
+			background: #e2e2e2;
+		    height: 332px;
+		    line-height: 300px;
+		    text-align: center;
+		    width: 590px;
+		    overflow: hidden;
+		   
+
+		}
+
+		.srcBox img{
+			height: 100%;
+			display: inline-block;
+
+			
+		}
+		.srcBox .cle{
+			border-radius:50%;
+		}
+		.tarBox{
+			width:300px;
+			height:300px;
+			overflow:hidden;
+			border:1px solid #000;
+			margin-top:50px;
+		}
+	</style>
+
+</head>
+<body>
+	<input type="file" id="upload">
+	<div class="srcBox">
+		 <img src="pool.jpg"  alt="" id="defaultImg">
+	</div>
+
+	<div class="tarBox">
+		 <img src="" alt="" id="tarImg">
+	</div>
+	<input type="button" id="btn" value="确认">
+	<canvas id="cv" width="300" height="300" style="display:none;"></canvas>
+	<img src="" alt="" id="outimg">
+	<script src="js/cutImg.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+</html>
